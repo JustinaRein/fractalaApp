@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'SkyTextRegular';
+  src: url("sky_reg-webfont.eot");
+  src: url("sky_reg-webfont.eot?#iefix") format("embedded-opentype"), url("sky_reg-webfont.woff") format("woff"), url("sky_reg-webfont.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SkyTextMedium';
+  src: url("sky_med-webfont.eot");
+  src: url("sky_med-webfont.eot?#iefix") format("embedded-opentype"), url("sky_med-webfont.woff") format("woff"), url("fonts/sky_med-webfont.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SkyTextBold';
+  src: url("sky_bold-webfont.eot");
+  src: url("sky_bold-webfont.eot?#iefix") format("embedded-opentype"), url("sky_bold-webfont.woff") format("woff"), url("fonts/sky_bold-webfont.ttf") format("truetype");
+  font-style: normal; }
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #999;
+  overflow: hidden; }
+  #container .legals {
+    position: absolute;
+    font-family: "SkyTextRegular";
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    font-size: 10px;
+    color: #999999; }
+  #container #text-container {
+    margin: 0;
+    font-weight: normal;
+    font-family: "SkyTextRegular"; }
+    #container #text-container h1 {
+      display: inline;
+      font-size: inherit;
+      font-weight: normal;
+      margin: 0;
+      font-family: "SkyTextBold"; }
+    #container #text-container h2 {
+      display: inline;
+      font-size: inherit;
+      font-weight: normal;
+      margin: 0;
+      font-family: "SkyTextMedium"; }
+  #container #legals-text {
+    padding: 15px 5px 20px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 10%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 10%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    display: none; }
+  #container #legals-button {
+    padding: 2px;
+    cursor: pointer; }
+
+#bg-exit {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%; }
