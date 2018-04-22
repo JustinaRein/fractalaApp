@@ -1,0 +1,143 @@
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+body {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: #000000;
+}
+
+img {
+    display: block;
+}
+
+header {
+    display: block;
+    float: left;
+    width: 100%;
+	background-color: #ffffff;
+	border-bottom: 1px solid #000000;
+}
+
+#logo {
+    float:left; 
+    padding:10px 0px 0px 50px;
+}
+
+#social_media {
+    float: right;
+}
+
+#social_media a {
+    display:block;
+    float:left;
+    padding:10px 5px 10px 0px;
+    text-decoration: none;
+}
+
+#content_wrapper {
+    padding-top: 25px;
+    background-color: #fff;
+    width:100%;
+    display: block;
+    float: left;
+}
+
+footer { 
+	background-color: #000000;
+	margin: 0 auto; 
+    width: 100%; 
+    display: block;
+    float: left;
+}
+
+.project_container {
+    float:left;
+    width:300px;
+    height:250px;
+    overflow:hidden;
+    margin:5px;
+}
+
+.project_container img {
+    width:100%;
+    height:auto;
+}
+
+iframe {
+    border: 0;
+    overflow: hidden;
+    background-color:#fff;
+}
+
+footer p {
+    text-align: center; 
+    color:#fff; 
+    font-size: 18px;
+    padding:20px;
+}
+
+@media (max-width: 810px) {
+
+    #logo {
+        padding-left: 10px;
+    }
+    #front_page_title {
+        width:100%;
+        padding:0px;
+    }
+    #front_page_title h1 {
+        padding-top:0px;
+        padding-bottom:30px;
+    }
+    #front_page_navigation {
+       padding-right: 10px;
+    }
+    nav {
+        border:none;
+    }
+}
+
+@media (max-width: 360px) {
+    #front_page_title h1 span.line_one {
+        font-size:50px;
+    }
+    #front_page_title h1 span.line_second {
+        font-size:33px;
+        line-height:36px;
+    }
+    #front_page_title h1 span.line_third {
+        font-size:36px;
+        line-height:36px;
+    }
+    nav {
+        width: 110px;
+    }
+    #navigation a {
+        font-size:18px;
+    }
+    .slide_text {
+        font-size:12px;
+    }
+    .slide_text b {
+        font-size:14px;
+    }
+}
