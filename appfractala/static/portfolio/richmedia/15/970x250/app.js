@@ -107,10 +107,8 @@ function setMainProfile() {
 	
 	exitURL.url = dynamicContent.Feed_970x250[0].exit_URL.Url;
     
-    /*Polite load allt he required images*/
     var batchImageLoader = new BatchImageLoader(profile, function() {
         preloader.fadeOut(function() {
-            /*Once the polite load is complete start the setup of the main banner*/
             var main = new Main(profile);
         });
     });
