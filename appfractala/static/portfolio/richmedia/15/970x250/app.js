@@ -1386,11 +1386,6 @@ function ListContainer(stage, profile, index, updateStageContainerCoor, updateAr
 
 })(window);
 
-/**
-* ImageLoader
-*/
-
-        
     function ImageLoader(obj, callback) {    
         /*Creates a new HTML Image element*/
         var img = new Image();   
